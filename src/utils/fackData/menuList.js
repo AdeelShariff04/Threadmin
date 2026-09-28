@@ -113,4 +113,49 @@ export const menuList = [
             }
         ]
     },
+    {
+        id: 7,
+        name: "ledger",
+        path: "/ledger",
+        icon: 'feather-pie-chart',
+        dropdownMenu: []
+    },
+    {
+        id: 8,
+        name: "widgets",
+        path: "#",
+        icon: 'feather-layout',
+        dropdownMenu: [
+            {
+                id: 1,
+                name: "Lists",
+                path: "/widgets/lists",
+                subdropdownMenu: false
+            },
+            {
+                id: 2,
+                name: "Tables",
+                path: "/widgets/tables",
+                subdropdownMenu: false
+            },
+            {
+                id: 3,
+                name: "Charts",
+                path: "/widgets/charts",
+                subdropdownMenu: false
+            },
+            {
+                id: 4,
+                name: "Statistics",
+                path: "/widgets/statistics",
+                subdropdownMenu: false
+            },
+            {
+                id: 5,
+                name: "Miscellaneous",
+                path: "/widgets/miscellaneous",
+                subdropdownMenu: false
+            },
+        ]
+    },
 ]

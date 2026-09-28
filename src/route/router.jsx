@@ -24,6 +24,7 @@ import EmployeeList from "../pages/employee-list";
 import EmployeeView from "../pages/employee-view";
 import EmployeeCreate from "../pages/employee-create";
 import EmployeeEdit from "../pages/employee-edit";
+import Ledger from "../pages/ledger";
 // import LoginMinimal from "../pages/extrapages/login-minimal";
 // import RegisterMinimal from "../pages/extrapages/register-minimal";
 // import RegisterCreative from "../pages/extrapages/register-creative";
@@ -35,11 +36,11 @@ import EmployeeEdit from "../pages/employee-edit";
 // import OtpCreative from "../pages/extrapages/otp-creative";
 // import MaintenanceMinimal from "../pages/extrapages/maintenance-minimal";
 // import MaintenanceCreative from "../pages/extrapages/maintenance-creative";
-// import WidgetsLists from "../pages/extrapages/widgets-lists";
-// import WidgetsTables from "../pages/extrapages/widgets-tables";
-// import WidgetsCharts from "../pages/extrapages/widgets-charts";
-// import WidgetsStatistics from "../pages/extrapages/widgets-statistics";
-// import WidgetsMiscellaneous from "../pages/extrapages/widgets-miscellaneous";
+import WidgetsLists from "../pages/extrapages/widgets-lists";
+import WidgetsTables from "../pages/extrapages/widgets-tables";
+import WidgetsCharts from "../pages/extrapages/widgets-charts";
+import WidgetsStatistics from "../pages/extrapages/widgets-statistics";
+import WidgetsMiscellaneous from "../pages/extrapages/widgets-miscellaneous";
 
 export const router = createBrowserRouter([
     {
@@ -134,27 +135,30 @@ export const router = createBrowserRouter([
                 path: "/employees/edit",
                 element: <EmployeeEdit />
             },
-            
-            // {
-            //     path: "/widgets/lists",
-            //     element: <WidgetsLists />
-            // },
-            // {
-            //     path: "/widgets/tables",
-            //     element: <WidgetsTables />
-            // },
-            // {
-            //     path: "/widgets/charts",
-            //     element: <WidgetsCharts/>
-            // },
-            // {
-            //     path: "/widgets/statistics",
-            //     element: <WidgetsStatistics/>
-            // },
-            // {
-            //     path: "/widgets/miscellaneous",
-            //     element: <WidgetsMiscellaneous/>
-            // },
+            {
+                path: "/ledger",
+                element:<Ledger/>
+            },
+            {
+                path: "/widgets/lists",
+                element: <WidgetsLists />
+            },
+            {
+                path: "/widgets/tables",
+                element: <WidgetsTables />
+            },
+            {
+                path: "/widgets/charts",
+                element: <WidgetsCharts/>
+            },
+            {
+                path: "/widgets/statistics",
+                element: <WidgetsStatistics/>
+            },
+            {
+                path: "/widgets/miscellaneous",
+                element: <WidgetsMiscellaneous/>
+            },
 
         ]
     },
